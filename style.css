@@ -93,12 +93,11 @@ nav {
 .hero-image {
     flex: 1;
     background: url('food-pizza-still-life-hd-wallpaper-preview.jpg') no-repeat center center/cover;
-    width: 60%;
+    width: 50%;
     height: 80%;
     border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
-    animation: fadein 2s ease-in-out;
+    margin-top: 20px;
+   animation: fadein 2s ease-in-out;
     box-shadow: 0 4px 20px rgba(red, green, blue, alpha);
 
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,41 +20,102 @@
                 <li><a href="sign.html">Sign in</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-icon">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to <br> Pizza  Palace </h1>
+            <h1>Welcome to <br> Pizza Palace </h1>
             <p>Delicious pizzas made with love</p>
             <a href="#menu" class="btn">Explore Menu</a>
         </div>
         <div class="hero-image"></div>
     </section>
-    
 
-    <section id="menu" class="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="images.jpeg" alt="Pizza 1">
-                <h3>Margherita</h3>
-                <p>Tomato sauce, mozzarella, and basil.</p>
-                <span>$10.99</span>
-            </div>
-            <div class="menu-item">
-                <img src="6211.jpg_wh300.jpg" alt="Pizza 2">
-                <h3>Pepperoni</h3>
-                <p>Tomato sauce, mozzarella, and pepperoni.</p>
-                <span>$12.99</span>
-            </div>
-            <div class="menu-item">
-                <img src="top-view-pepperoni-pizza.avif" alt="Pizza 3">
-                <h3>Vegetarian</h3>
-                <p>Tomato sauce, mozzarella, and veggies.</p>
-                <span>$11.99</span>
-            </div>
-        </div>
+    <script>
+        // Toggle the menu on click of the hamburger icon
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+
+    
+<section id="menu" class="menu">
+        <div class="bg-white">
+            <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+              <h2 class="text-2xl font-bold tracking-tight text-gray-900">Our Menu</h2>
+          
+              <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div class="group relative">
+                  <img src="top-view-pepperoni-pizza.avif" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                  <div class="mt-4 flex justify-between">
+                    <div>
+                      <h3 class="text-sm text-gray-700">
+                        <a href="#">
+                          <span aria-hidden="true" class="absolute inset-0"></span>
+                            Pepperoni Pizza
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-sm text-gray-500">large</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900">$35</p>
+                  </div>
+                </div>
+          <div class="group relative">
+                    <img src="images.jpeg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                        <h3 class="text-sm text-gray-700">
+                            <a href="#">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                Veggie Pizza
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-500">large</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">$35</p>
+                    </div>
+                    </div>
+                    <div class="group relative">
+                    <img src="6211.jpg_wh300.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                        <h3 class="text-sm text-gray-700">
+                            <a href="#">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                Hawaiian Pizza
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-500">large</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">$35</p>
+                    </div>
+                    </div>
+                    <div class="group relative">
+                    <img src="food-pizza-still-life-hd-wallpaper-preview.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                        <h3 class="text-sm text-gray-700">
+                            <a href="#">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                BBQ Chicken Pizza
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-500">large</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">$35</p>
+                </div>
+          </div>
+          
+                     
     </section>
 
     <section id="about" class="about">
@@ -81,6 +143,8 @@
     <footer>
         <p>&copy; 2023 Pizza Palace. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
     <script  type = "module" src="script.js" ></script>
 </body>
 </html>

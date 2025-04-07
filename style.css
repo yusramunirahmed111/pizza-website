@@ -93,12 +93,13 @@ nav {
 .hero-image {
     flex: 1;
     background: url('food-pizza-still-life-hd-wallpaper-preview.jpg') no-repeat center center/cover;
-    width: 50%;
-    height: 80%;
-    border-radius: 20px;
-    margin-top: 20px;
+    background-size: cover;
+    width: 30vh;
+    height: 50vh;
+    border: 5px solid #383535;
+    border-radius: 10px;
+    margin-top: 10px;
     animation: fadein 2s ease-in-out;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Hamburger Menu */
